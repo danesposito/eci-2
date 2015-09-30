@@ -1,1 +1,18 @@
-<h1>Hello World.</h1>
+<h1>List of Counrties</h1>
+
+<% @countries.each do |country| %>
+
+	<h2 class="title">
+	<%= country.name %>
+	</h2>
+
+	<h3><%= country.alternative_name %></h3>
+
+	<p class="date">
+	Submitted <%= time_ago_in_words(country.created_at) %>
+	</p>
+
+	<p class="body">
+	<%= country.iso_code_2 %> | <%= country.iso_code_3 %> | <%= country.country_code %>
+	</p>
+<% end %>
