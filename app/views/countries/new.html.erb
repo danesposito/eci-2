@@ -1,0 +1,28 @@
+<h1>Create a new country</h1>
+
+<%= form_for :country, url:countries_path do |f| %>
+<p>
+<%= f.label :name %><br>
+<%=f.text_field :name%>
+</p>
+<p>
+<%= f.label :alternative_name %><br>
+<%=f.text_field :alternative_name %>
+</p>
+<p>
+<%= f.label :iso_code_2 %><br>
+<%=f.text_field :iso_code_2 %>
+</p>
+<p>
+<%= f.label :iso_code_3 %><br>
+<%=f.text_field :iso_code_3 %>
+</p>
+<p>
+<%= f.label :country_code %><br>
+<%=f.text_field :country_code  %>
+</p>
+
+<p>
+<%= f.submit %>
+</p>
+<% end %>

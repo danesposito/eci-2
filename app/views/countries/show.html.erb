@@ -1,0 +1,13 @@
+<h1 class="title">
+<%= @country.name %>
+</h1>
+
+<h2><%= @country.alternative_name %></h2>
+
+<p class="date">
+Submitted <%= time_ago_in_words(@country.created_at) %>
+</p>
+
+<p class="body">
+<%= @country.iso_code_2 %> | <%= @country.iso_code_3 %> | <%= @country.country_code %>
+</p>
